@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/base.css" rel="stylesheet" type="text/css">
+  <link href="../css/index.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>活动首页</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="tran-pop">
+      <div class="zu-transition">
+        <div>
+        <div class="pop-header">
+          <img src="../static/join_header_icon.png"/>
+          <img class="close-pop" src="../static/close_icon.png" />
+          <text>参与步骤</text>
+        </div>
+        <div class="pop-cont">
+<p>进入活动页面后，在限定时间内<span>(45秒)</span>翻牌消除相同的色块，直至底图完全出现即算完成活动挑战，完成后可进入抽奖页面。</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="home-banner ">
+        <div class="banck-img">
+          <img src="../static/bank_icon.png">
+        </div>
+        <div class="text-img">
+          <img src="../static/text_icon.png">
+        </div>
+        <div class="time-img">
+          <text class="time-text">2020年10月22日-2020年11月5日 </text>
+          <img src="../static/time_btn_icon.png">
+        </div>
+        <div class="btn-position">
+          <p class="rule-btn btn">活动规则</p>
+          <p class="prize-btn btn">我的奖品</p>
+        </div>
+        <div class="join-btn">
+           立即参与
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="../js/rem.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $(".join-btn").click(function () {
+      $(".tran-pop").show();
+    });
+    $(".close-pop").click(function () {
+      $(".tran-pop").hide();
+    });
+    $(".prize-btn").click(function () {
+      window.location.href = "prize.html"
+    });
+    $(".rule-btn").click(function () {
+      window.location.href = "rule.html"
+    });
+  })
+</script>

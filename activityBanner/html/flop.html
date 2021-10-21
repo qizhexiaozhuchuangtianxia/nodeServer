@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/base.css" rel="stylesheet" type="text/css">
+  <link href="../css/flop.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>翻牌</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="flop-cont">
+      <div class="flop-top">
+        <img class="flop_text" src="../static/flop_text.png">
+        <div class="line-time">
+          <p>45s</p>
+          <img class="time_icon" src="../static/time-img.png">
+        </div>
+      </div>
+      <div class="flop-info">
+        <div class="flop-box">
+          <h4>您还有<span>1次</span>翻牌机会</h4>
+          <p class="tex-tip">消灭所有相同字块，即有机会赢取888微信红包哦！</p>
+        </div>
+        <div class="flop-card-box">
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind1"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind2"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind3"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind4"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind5"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind6"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind1"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind2"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind3"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind4"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind5"></div>
+          </div>
+          <div class="flop-card">
+            <div class="front"></div>
+            <div class="behind behind6"></div>
+          </div>
+        </div>
+        <div class="flop-btn-box">
+          <div class="flop-btn flop-btn-share">分享好友机会+1</div>
+          <div class="flop-btn flop-btn-now">立刻翻牌</div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+<script src="../js/rem.js"></script>
+<script type="text/javascript">
+  $(function () {
+    // 翻牌
+    $(".flop-card").click(function() {
+      $(this).find(".front").addClass("front-active")
+      $(this).find(".behind").addClass("behind-active")
+    })
+
+    // 按钮事件
+    $(".flop-btn-share").click(function () {
+      console.log('点击了分享按钮')
+    })
+
+    $(".flop-btn-now").click(function () {
+      console.log('点击了翻牌按钮')
+    })
+
+  })
+</script>

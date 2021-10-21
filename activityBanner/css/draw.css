@@ -1,0 +1,324 @@
+.zu-transition {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-success {
+  position: relative;
+  top: 0;
+  width: 5.44rem;
+  height: 5.99rem;
+  background: url(../static/draw_pop_icon.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.pop-position {
+  width: 5.44rem;
+  top: 0.3rem;
+  left: 0.2rem;
+  position: absolute;
+  text-align: center;
+
+}
+
+/* 已中奖 */
+.draw-pop-up{
+  display: none;
+}
+.pop-s-title {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: #E28E36;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.pop-s-text {
+  margin-top: 0.5rem;
+}
+
+.pop-s-text p {
+  font-size: 0.36rem;
+  font-weight: 400;
+  color: #E44C27;
+}
+
+.pop-s-text p:nth-child(2) {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+  font-size: 0.60rem;
+  font-weight: bold;
+}
+
+.pop-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.num-code {
+  width: 3.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  background: #EDEDED;
+  border-radius: 0.1rem;
+  margin-right: 0.14rem;
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #343434;
+}
+
+.copy {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #E44C27;
+}
+
+.pop-tip {
+  width: 3.97rem;
+  height: 1.02rem;
+  font-size: 0.22rem;
+  font-weight: 400;
+  color: #F9E0A4;
+  line-height: 0.40rem;
+  margin: 0.7rem auto;
+}
+
+/* 未中奖 */
+.no-draw-pop-up {
+  display: none;
+}
+.pop-cont{
+  width: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-nop {
+  width: 1.57rem;
+  height: 1.57rem;
+
+}
+.no-pop-s-text{
+  margin-top: 0.3rem;
+
+}
+.no-text{
+font-size: 0.36rem;
+font-weight: 400;
+color: #E44C26;
+margin-top:0.25rem;
+line-height: 0.40rem;
+}
+.pop-btn {
+  width: 7.5rem;
+  margin-top: 0.53rem;
+  display: flex;
+  justify-content: center;
+}
+
+.close-btn {
+  width: 3.20rem;
+  height: 1.05rem;
+  line-height: 1.05rem;
+  font-size: .30rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  background: url(../static/pop-close.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.again-btn {
+  width: 3.20rem;
+  height: 1.05rem;
+  line-height: 1.05rem;
+  font-size: 0.30rem;
+  font-weight: 400;
+  color: #3C1CAF;
+  text-align: center;
+  background: url(../static/pop-again.png) no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.draw-wrapper {
+  position: relative;
+  top: 0;
+  width: 7.5rem;
+  height: 13.34rem;
+  background: url(../static/draw_bj.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.draw_text {
+  width: 4.66rem;
+  height: 0.76rem;
+  margin: 1.7rem 1.4rem;
+}
+
+.draw-turn {
+  position: relative;
+  top: 1rem;
+  width: 7.5rem;
+}
+
+.circle-img {
+  position: absolute;
+  left: 0.35rem;
+  z-index: 1;
+}
+
+.circle {
+  width: 6.8rem;
+  height: 6.8rem;
+}
+
+.circle-btn {
+  width: 6.8rem;
+  height: 6.8rem;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle-icon {
+  width: 6.8rem;
+  height: 6.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.circle-text {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.58rem;
+}
+
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+
+}
+
+.slice span {
+  font-size: 0.24rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.violet {
+  color: #D96AF9;
+}
+
+.white {
+  color: #fff;
+}
+
+.circle-text ul {
+  position: relative;
+  margin: 0.01rem auto;
+  padding: 0;
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+
+}
+
+.slice-one {
+  transform: rotate(30deg) skewY(-30deg);
+}
+
+.slice-one span {
+  transform: rotate(48deg);
+  right: 45%;
+  position: absolute;
+  top: 43%;
+}
+
+.slice-two {
+  transform: rotate(-30deg) skewY(-30deg);
+}
+
+.slice-two span {
+  transform: rotate(48deg);
+  left: 24%;
+  position: absolute;
+  top: 45%;
+  margin-left: 0.1rem;
+}
+
+.slice-three {
+  transform: rotate(-90deg) skewY(-30deg);
+}
+
+.slice-three span {
+  transform: rotate(48deg);
+  right: 45%;
+  position: absolute;
+  top: 50%;
+}
+
+.slice-four {
+  transform: rotate(-150deg) skewY(-30deg);
+}
+
+.slice-four span {
+  transform: rotate(48deg);
+  right: 50%;
+  position: absolute;
+  top: 48%;
+}
+
+.slice-five {
+  transform: rotate(-210deg) skewY(-30deg);
+}
+
+.slice-five span {
+  transform: rotate(-131deg);
+  right: 45%;
+  position: absolute;
+  top: 40%;
+}
+
+.slice-six {
+  transform: rotate(-270deg) skewY(-30deg);
+}
+
+.slice-six span {
+  transform: rotate(48deg);
+  right: 50%;
+  position: absolute;
+  top: 40%;
+}
+
+
+.money-img {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+.money-img img {
+  width: 7.42rem;
+  height: 7.36rem;
+
+}

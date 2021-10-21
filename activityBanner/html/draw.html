@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/base.css" rel="stylesheet" type="text/css">
+  <link href="../css/draw.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>幸运大抽奖</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 已中奖 -->
+    <div class="draw-pop-up">
+      <div class="zu-transition">
+        <div class="pop-success">
+          <div class="pop-position">
+            <div class="pop-s-title">中奖啦</div>
+            <div class="pop-s-text">
+              <p>恭喜您获得微信红包</p>
+              <p>1.00</p>
+            </div>
+            <div class="pop-code">
+              <span class="num-code">123456</span>
+              <span class="copy">复制</span>
+            </div>
+            <div class="pop-tip">复制此券码至“苏州银行电子银行”公众号“发现”菜单栏中的“翻牌活动领红包”即可兑换红包
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 未中奖 -->
+    <div class="no-draw-pop-up">
+      <div class="zu-transition">
+      <div class="pop-cont">
+       <div class="pop-success">
+         <div class="pop-position">
+           <div class="pop-s-title">没抽中～</div>
+           <div class="no-pop-s-text">
+             <img class="pop-nop" src="../static/pop-nop.png">
+             <p class="no-text">好可惜，差点就中了！</p>
+           </div>
+         </div>
+       </div>
+       <div class="pop-btn">
+         <div class="close-btn">明日再来</div>
+         <div class="again-btn">再来一次</div>
+       </div>
+       </div>
+      </div>
+    </div>
+    <div class="draw-wrapper">
+      <img class="draw_text" src="../static/draw_text.png" />
+      <div class="draw-turn">
+        <div class="circle-img">
+          <img class="circle" src="../static/draw_img2.png" />
+          <img class="circle-icon" src="../static/draw_img3.png" />
+          <img class="circle-btn" src="../static/draw_btn.png" />
+          <div class="circle-text">
+            <ul>
+              <li class='slice-one slice'> <span class="violet">¥8.8</span></li>
+              <li class='slice-two slice'> <span class="white">谢谢参与</span></li>
+              <li class='slice-three slice'><span class="violet">¥888</span></li>
+              <li class='slice-four slice'><span class="white">¥1</span></li>
+              <li class='slice-five slice'><span class="violet">谢谢参与</span></li>
+              <li class='slice-six slice '><span class="white">¥88</span></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="money-img">
+          <img src="../static/draw_img1.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="../js/rem.js"></script>
+<script type="text/javascript">
+  $(function () {
+
+    $(".close-btn").click(function () {
+      $(".no-draw-pop-up").hide()
+    })
+    $(".again-btn").click(function () {
+      $(".no-draw-pop-up").hide()
+    })
+    $(".circle-btn").click(function () {
+      $(".no-draw-pop-up").show()
+      // $(".draw-pop-up").show()
+    })
+    $(".zu-transition").click(function () {
+      $(".draw-pop-up").hide()
+      $(".no-draw-pop-up").hide()
+    })
+
+  })
+</script>

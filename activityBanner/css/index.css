@@ -1,0 +1,172 @@
+ .tran-pop {
+   display: none;
+ }
+
+ .zu-transition {
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   position: fixed;
+   z-index: 12;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .pop-header {
+   width: 6.12rem;
+   height: 2.15rem;
+   position: relative;
+ }
+
+ .pop-header img {
+   position: relative;
+ }
+
+ .pop-header img {
+   position: absolute;
+ }
+
+ .pop-header img:nth-child(1) {
+   width: 6.12rem;
+   height: 2.15rem;
+ }
+
+ .pop-header img:nth-child(2) {
+   width: 0.54rem;
+   height: 0.54rem;
+   right: 0;
+   top: 0.5rem;
+ }
+
+ .pop-header text {
+   position: absolute;
+   font-size: 0.36rem;
+   font-weight: 400;
+   color: #FFFFFF;
+   bottom: 0.3rem;
+   left: 2.5rem;
+ }
+
+ .pop-cont {
+   background: #FFFFFF;
+   height: 3rem;
+   width: 6.12rem;
+   border-radius: 0 0 0.2rem 0.2rem;
+
+ }
+
+ .pop-cont p {
+   font-weight: 400;
+   font-size: 0.26rem;
+   color: #666666;
+   padding: 0.6rem;
+   line-height: 0.5rem;
+ }
+
+ .pop-cont span {
+   color: #3947FB;
+   font-size: 0.26rem;
+ }
+
+ .wrapper {
+   position: relative;
+   height: 100%;
+ }
+
+ .home-banner {
+   position: relative;
+   top: 0;
+   width: 7.5rem;
+   background: url(../static/home_bj.png) no-repeat;
+   background-size: 100% 100%;
+   height: 15.35rem;
+ }
+
+ .banck-img {
+   position: absolute;
+   top: 0.6rem;
+   left: 0.26rem;
+ }
+
+ .banck-img img {
+   width: 2.5rem;
+   height: 0.4rem;
+ }
+
+ .text-img {
+   position: absolute;
+   top: 1.5rem;
+   left: 0.95rem;
+ }
+
+ .text-img img {
+   width: 5.55rem;
+   height: 2.44rem;
+ }
+
+ .time-img {
+   position: absolute;
+   top: 4.03rem;
+   left: 0.95rem;
+ }
+
+ .time-img img {
+   width: 5.17rem;
+   height: 0.82rem;
+ }
+
+ .time-text {
+   position: absolute;
+   font-size: 0.30rem;
+   font-weight: 600;
+   color: #FFECC3;
+   line-height: 0.48rem;
+   top: 0.16rem;
+   left: 0.3rem;
+   transform: rotate(-2deg);
+   -webkit-transform: translateX(-2deg);
+   -ms-transform: translateX(-2deg);
+   -moz-transform: translateX(-2deg);
+   -o-transform: translateX(-2deg);
+ }
+
+
+ .btn {
+   margin-bottom: 0.25rem;
+   width: 1.33rem;
+   height: 0.50rem;
+   line-height: 0.50rem;
+   text-align: center;
+   background: #092A77;
+   border-radius: 0.25rem 0 0 0.25rem;
+   font-size: 0.24rem;
+   font-weight: 400;
+ }
+
+ .btn-position {
+   position: absolute;
+   height: 1.2rem;
+   top: 5.5rem;
+   right: 0;
+   font-size: 0.3rem;
+   font-weight: bold;
+   color: #fff;
+   z-index: 2;
+ }
+
+ .join-btn {
+   position: absolute;
+   left: 0.47rem;
+   bottom: 2.5rem;
+   width: 6.6rem;
+   background: url(../static/btn_icon.png) no-repeat;
+   background-size: 100% 100%;
+   height: 1.1rem;
+   font-size: 0.34rem;
+   font-weight: 500;
+   color: #3C1CAF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }

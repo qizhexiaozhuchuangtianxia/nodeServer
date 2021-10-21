@@ -1,0 +1,74 @@
+.header {
+  position: absolute !important;
+}
+
+.rule-cont {
+  position: relative;
+  top: 0;
+  background: #F0EFF5;
+  height: 15.04rem;
+}
+
+.rule-top {
+  position: absolute;
+  top: 0;
+  width: 7.5rem;
+  background: url(../static/rule_bj.png) no-repeat;
+  background-size: 100% 100%;
+  height: 5.1rem;
+}
+
+.rule-top img {
+  width: 2.96rem;
+  height: 0.61rem;
+  margin: 1.5rem 0 0 2.3rem;
+}
+
+.rule-info {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rule-box {
+  position: absolute;
+  top: 2.66rem;
+  border-radius: 0.3rem;
+  width: 7.02rem;
+  height: 11.51rem;
+  background: #fff;
+}
+
+.rule-box ul {
+  padding: 0.66rem 0.54rem 0.68rem 0.32rem;
+
+}
+
+.rule-box ul li {
+  margin-bottom: 0.38rem;
+}
+
+.rule-box ul li p {
+  display: flex;
+}
+
+.rule-box ul li p span:nth-child(1) {
+  width: 0.36rem;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  text-align: center;
+  background: #2B9DFB;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.30rem;
+  font-weight: 400;
+  margin: 0.05rem 0.12rem 0 0;
+}
+
+.rule-box ul li p span:nth-child(2) {
+  font-size: 0.30rem;
+  font-weight: 400;
+  color: #999999;
+  width: 5.72rem;
+}
